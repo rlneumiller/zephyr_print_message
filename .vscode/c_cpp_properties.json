@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Zephyr ARM",
+            "includePath": [
+                "${userHome}/gits/zephyr-projects/spiram_test/**",
+                "${userHome}/zephyrproject/zephyr/**",
+                "${userHome}/zephyrproject/zephyr/include/**",
+                "${userHome}/zephyrproject/zephyr/include/zephyr/**",
+                "${userHome}/zephyrproject/zephyr/build/zephyr/include/**",
+                "${userHome}/zephyrproject/modules/hal/espressif/components/heap/include/**",
+            ],
+            "defines": [],
+            "compilerPath": "${ZEPHYR_SDK_INSTALL_DIR}/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "gcc-arm"
+        },
+        {
+            "name": "Zephyr RISCV",
+            "includePath": [
+                "${userHome}/zephyrproject/zephyr/**",
+                "${userHome}/zephyrproject/zephyr/include/**",
+                "${userHome}/zephyrproject/zephyr/include/zephyr/**",
+                "${userHome}/zephyrproject/zephyr/build/zephyr/include/**",
+                "${userHome}/zephyrproject/modules/hal/espressif/components/heap/include/**",
+            ],
+            "defines": [],
+            "compilerPath": "${ZEPHYR_SDK_INSTALL_DIR}/riscv64-zephyr-elf/bin/riscv64-zephyr-elf-gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compileCommands": "/home/arrel/zephyrproject/zephyr/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

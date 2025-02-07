@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.overlay": "dts",
+        "uart0.txt": "no-wrap",
+        "string.h": "c"
+    }
+}
