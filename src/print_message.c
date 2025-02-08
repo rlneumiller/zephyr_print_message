@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) Arrel Neumiller <rlneumiller@gmail.com>.
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 #include "print_message.h"
 #include <stdarg.h>
 
