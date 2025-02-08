@@ -3,6 +3,7 @@
 # Zephyr print_message project
 
 This project implements a simple application using the Zephyr RTOS that formats and prints messages with aligned line breaks after `\n`. The application utilizes ANSI escape codes for colored output.
+I use this to help me visually parse console output.
 
 ## Project Structure
 
@@ -49,6 +50,7 @@ Will output:
 zephyr_helper: Hello World! <board_name>
                This is a longer message
 ```
+![Screenshot displaying console output.](/images/screenshot_01.png "Console output.")
 
 ## License
 
