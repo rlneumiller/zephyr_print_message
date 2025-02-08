@@ -39,8 +39,12 @@ west flash --esp-device <serial_port>
 
 ## Usage
 
-The application formats messages with the prefix 'zephyrwith `\n` characters for line breaks. For example, calling the `print_message` function with the string `"Hello World! %s\n, CONFIG_BOARD_TARGET\nThis is a longer message"` will output:
+The application formats messages with the prefix zephyr_helper: ' and uses `\n` characters for line breaks. For example, calling the `print_message` function with the string `"Hello World! %s\n, CONFIG_BOARD_TARGET\nThis is a longer message"` will output:
 
+```c
+print_message("Hello World! %s\n, CONFIG_BOARD_TARGET\nThis is a longer message");
+```
+Will output:
 ```
 zephyr_helper: Hello World! <board_name>
                This is a longer message
