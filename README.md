@@ -8,14 +8,17 @@ I use this to help me visually parse console output.
 ## Project Structure
 
 ```
-zephyr-c-project
-├── src
-│   ├── main.c          # the main function
-|   |__ print_message.c # print_message implementation
-|   |__ print_message.h # include
-├── CMakeLists.txt      # CMake configuration file
-├── prj.conf            # Zephyr project configuration settings
-└── README.md           # Project documentation
+zephyr_print_message
+├── CMakeLists.txt
+├── images
+│   └── screenshot_01.png
+├── LICENSE
+├── prj.conf
+├── README.md
+└── src
+    ├── main.c
+    ├── print_message.c
+    └── print_message.h
 ```
 
 ## Building the Project
@@ -45,11 +48,14 @@ The application formats messages with the prefix zephyr_helper: ' and uses `\n` 
 ```c
 print_message("Hello World! %s\n, CONFIG_BOARD_TARGET\nThis is a longer message");
 ```
+
 Will output:
+
 ```
 zephyr_helper: Hello World! <board_name>
                This is a longer message
 ```
+
 ![Screenshot displaying console output.](/images/screenshot_01.png "Console output.")
 
 ## License
